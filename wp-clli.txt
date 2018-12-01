@@ -1,0 +1,1 @@
+wp post delete 1 2 3 --force && wp core language install ja --activate && wp option update timezone_string 'Asia/Tokyo' && wp core update --locale=ja --force && wp plugin install wp-multibyte-patch show-current-template ewww-image-optimizer all-in-one-wp-migration duplicate-post --activate && wp core language update
