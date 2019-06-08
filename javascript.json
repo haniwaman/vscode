@@ -1,0 +1,85 @@
+{
+  // Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Click": {
+    "prefix": "click",
+    "body": ["$('$1').on('click', function() {", "\t$2", "});"]
+  },
+  "Console log": {
+    "prefix": "log",
+    "body": ["console.log( $1 );"]
+  },
+  "jQuery wordpress": {
+    "prefix": "jw",
+    "body": ["jQuery(function($){", "\t$1", "});"]
+  },
+  "jQuery Elemment": {
+    "prefix": "$",
+    "body": ["$('$1')"]
+  },
+  "jQuery Animate": {
+    "prefix": "anim",
+    "body": [
+      "$('$1').animate({",
+      "\t'bottom': 0",
+      "},",
+      "{",
+      "\t'duration': 800,",
+      "\t'easing': 'linear'",
+      "});"
+    ]
+  },
+  "addClass": {
+    "prefix": "ad",
+    "body": ["$('$1').addClass('${2:active}');"]
+  },
+  "removeClass": {
+    "prefix": "rm",
+    "body": ["$('$1').removeClass('${2:active}}');"]
+  },
+  "slideUp": {
+    "prefix": "su",
+    "body": ["$('$1').slideUp();"]
+  },
+  "slideDown": {
+    "prefix": "sd",
+    "body": ["$('$1').slideDown();"]
+  },
+  "If display:block": {
+    "prefix": "ifcss",
+    "body": [
+      "if($(this).css('display') === 'block') {",
+      "$1",
+      "} else {",
+      "$2",
+      "}"
+    ]
+  },
+  "floatting": {
+    "prefix": "floating",
+    "body": [
+      "jQuery(window).on('scroll', function($) {",
+      "\tif ($(this).scrollTop() > 200) {",
+      "\t\t$('.floating').show();",
+      "\t} else {",
+      "\t\t$('.floating').hide();",
+      "\t}",
+      "});"
+    ]
+  },
+  "alert": {
+    "prefix": "a",
+    "body": ["alert('$1');"]
+  }
+}
