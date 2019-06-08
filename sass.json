@@ -1,0 +1,187 @@
+{
+  // Place your snippets for scss here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+
+  "Media Query": {
+    "prefix": "mq",
+    "body": ["@include mq('${1:sp}') {", "}"]
+  },
+  "List init": {
+    "prefix": "li",
+    "body": ["@include linit;"]
+  },
+  "Division": {
+    "prefix": "di",
+    "body": ["line-height: division($1,$2);"]
+  },
+  "Row": {
+    "prefix": "row",
+    "body": ["@include row;"]
+  },
+  "Row Center": {
+    "prefix": "rowc",
+    "body": ["@include row-c;"]
+  },
+  "Absolute Center": {
+    "prefix": "aba",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "transform: translate(-50%, -50%);"
+    ]
+  },
+  "Absolute Vertical Center": {
+    "prefix": "abv",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: $1;",
+      "transform: translateY(-50%);"
+    ]
+  },
+  "Absolute Horizontal Center": {
+    "prefix": "abh",
+    "body": [
+      "position: absolute;",
+      "top: $1",
+      "left: 50%;",
+      "transform: translateX(-50%);"
+    ]
+  },
+  "Z Index": {
+    "prefix": "zii",
+    "body": ["z-index: map-get(\\$layer,'$1');"]
+  },
+  "Icon Background": {
+    "prefix": "ibg",
+    "body": [
+      "content: \"\";",
+      "position: absolute;",
+      "top: 50%;",
+      "transform: translateY(-50%);",
+      "width: $1px;",
+      "height: $2px;",
+      "background: no-repeat url(../img/$3) center center / contain;"
+    ]
+  },
+  "Background": {
+    "prefix": "abg",
+    "body": [
+      "background: transparent url(../img/$1) $2repeat top center / co$3;"
+    ]
+  },
+  "Content": {
+    "prefix": "cnt",
+    "body": ["content: \"$1\";"]
+  },
+  "FirstChild": {
+    "prefix": "first",
+    "body": ["&:first-child {", "\t$1", "}"]
+  },
+  "LastChild": {
+    "prefix": "last",
+    "body": ["&:last-child {", "\t$1", "}"]
+  },
+  "Font Awesome": {
+    "prefix": "awe",
+    "body": ["@include linkIconFA(${1:'\\f105'}, ${2:'Font Awesome 5 Free'});"]
+  },
+  "Box Shadow": {
+    "prefix": "sha",
+    "body": ["box-shadow: 0 0 3px 0 ${1:#333};"]
+  },
+  "After": {
+    "prefix": "after",
+    "body": ["&::after {", "\tcontent: \"$1\";", "}"]
+  },
+  "Before": {
+    "prefix": "before",
+    "body": ["&::before {", "\tcontent: \"$1\";", "}"]
+  },
+  "Solid": {
+    "prefix": "awes",
+    "body": [
+      "content: \"\\f105\";",
+      "font-family: \"Font Awesome 5 Free\";",
+      "font-weight: 900;"
+    ]
+  },
+  "Reguler": {
+    "prefix": "awer",
+    "body": [
+      "content: \"\\f105\";",
+      "font-family: \"Font Awesome 5 Free\";",
+      "font-weight: 900;"
+    ]
+  },
+  "Opacity": {
+    "prefix": "op",
+    "body": ["opacity: \\$opacity;"]
+  },
+  "Hover": {
+    "prefix": "hover",
+    "body": [
+			"&:hover {",
+				"\topacity: \\$opacity;",
+				"\t$1",
+			"}"
+		]
+  },
+  "Grid": {
+    "prefix": "dg",
+    "body": ["display: grid;"]
+  },
+  "Scale": {
+    "prefix": "sc",
+    "body": ["scale($1, \\$division-$2)"]
+	},
+	"Transition": {
+    "prefix": "trs",
+    "body": ["transition: all 0.3s ease 0s;"]
+	},
+	"trY": {
+    "prefix": "trY",
+    "body": ["transform: translateY(-50%);"]
+	},
+	"trX": {
+    "prefix": "trX",
+    "body": ["transform: translateX(-50%);"]
+	},
+	"Justify": {
+    "prefix": "just",
+    "body": [
+			"text-align: justify;",
+			"text-justify: inter-ideograph;"
+		]
+	},
+	"vertical-rl": {
+    "prefix": "tate",
+    "body": [
+			"writing-mode: vertical-rl;"
+		]
+	},
+	"horizontal-tb": {
+    "prefix": "yoko",
+    "body": [
+			"writing-mode: horizontal-tb;"
+		]
+	},
+	"inner": {
+    "prefix": "inner",
+    "body": [
+			"> .inner {}"
+		]
+	}
+}
